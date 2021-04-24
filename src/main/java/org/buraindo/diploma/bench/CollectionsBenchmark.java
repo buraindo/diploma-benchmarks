@@ -36,7 +36,7 @@ public class CollectionsBenchmark {
         new Runner(opt).run();
     }
 
-    @Fork(100)
+    @Fork(1_000)
     @Benchmark
     @BenchmarkMode(Mode.SingleShotTime)
     public void forLoop(final Blackhole blackhole, final HandlerState state) {
@@ -53,7 +53,7 @@ public class CollectionsBenchmark {
         }
     }
 
-    @Fork(100)
+    @Fork(1_000)
     @Benchmark
     @BenchmarkMode(Mode.SingleShotTime)
     public void streamAPI(final Blackhole blackhole, final HandlerState state) {
