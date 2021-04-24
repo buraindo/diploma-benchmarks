@@ -8,7 +8,6 @@
     <artifactId>diploma.bench</artifactId>
     <version>1.0-SNAPSHOT</version>
     <build>
-        <sourceDirectory>src/main/java/org/buraindo/diploma/bench</sourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
