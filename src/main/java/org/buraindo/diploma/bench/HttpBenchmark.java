@@ -24,7 +24,7 @@ public class HttpBenchmark {
         new Runner(opt).run();
     }
 
-    @Fork(5)
+    @Fork(1_000)
     @Benchmark
     @BenchmarkMode(Mode.SingleShotTime)
     public void httpClient() throws IOException, InterruptedException {
@@ -36,7 +36,7 @@ public class HttpBenchmark {
         client.send(request, HttpResponse.BodyHandlers.discarding());
     }
 
-    @Fork(5)
+    @Fork(1_000)
     @Benchmark
     @BenchmarkMode(Mode.SingleShotTime)
     public void urlConnection() throws IOException {
